@@ -1,0 +1,31 @@
+{
+	"name": "mern-proj1",
+	"version": "1.0.0",
+	"main": "server.js",
+	"type": "module",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "cross-env NODE_ENV=development nodemon backend/server.js",
+		"build": "npm install && npm install --prefix frontend && npm run build --prefix frontend",
+		"start": "cross-env NODE_ENV=production node backend/server.js"
+	},
+	"keywords": [
+		"mern",
+		"mongoDB",
+		"Express",
+		"react",
+		"node",
+		"js"
+	],
+	"author": "Ayasha",
+	"license": "ISC",
+	"description": "product store website where we can create, delete, edit products of any kind",
+	"dependencies": {
+		"dotenv": "^16.5.0",
+		"express": "^5.1.0",
+		"mongoose": "^8.14.2"
+	},
+	"devDependencies": {
+		"cross-env": "^7.0.3"
+	}
+}
